@@ -44,6 +44,7 @@ app.post('/auth', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('OAuth proxy server running on port 3000');
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`OAuth proxy server running on port ${PORT
+
